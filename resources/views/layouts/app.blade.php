@@ -21,18 +21,16 @@
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
      <!-- Bootstrap CSS -->
 
- <link rel="stylesheet"  href="{{ asset('dist/1/css/chosen.css') }}">
+
+        <!-- Title CSS -->
+        	<title>منصة حلقة وصل</title>
+        <!-- Favicon -->
+        <link rel="stylesheet"  href="{{ asset('dist/1/css/chosen.css') }}">
  <link rel="stylesheet"  href="{{ asset('dist/star-rating/dist/star-rating.css') }}">
  <link rel="stylesheet" href="{{asset('dist/css/bootstrap.rtl.min.css') }}" >
  <link rel="stylesheet" href="{{ asset('dist/1/css/style.css') }}">
-<<<<<<< HEAD
- 
-   <!-- <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-icons/font/bootstrap-icons.css') }}"> -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-=======
 
    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap-icons/font/bootstrap-icons.css') }}">
->>>>>>> parent of 2b7ed14 (dsssf)
 
    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
         <!-- Owl Carousel Theme Default CSS -->
@@ -55,9 +53,6 @@
         <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}">
         <link rel="stylesheet"  href="{{ asset('dist/1/css/chosen.css') }}">
 
-        <!-- Title CSS -->
-        	<title>منصة حلقة وصل</title>
-        <!-- Favicon -->
         <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
         @livewireStyles
    <style>

@@ -1,7 +1,7 @@
 <div>
     @if ($paginator->hasPages())
         <nav>
-            <ul class="pagination justify-content-center">
+            <ul class="pagination">
                 {{-- Previous Page Link --}}
                 @if ($paginator->onFirstPage())
                     <li class="page-item disabled" aria-disabled="true">
@@ -12,7 +12,6 @@
                         <li class="page-item">
                             <button dusk="previousPage" type="button" class="page-link" wire:click="setPage('{{$paginator->previousCursor()->encode()}}','{{ $paginator->getCursorName() }}')" wire:loading.attr="disabled" rel="prev">@lang('pagination.previous')</button>
                         </li>
-
                     @else
                         <li class="page-item">
                             <button type="button" dusk="previousPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}" class="page-link" wire:click="previousPage('{{ $paginator->getPageName() }}')" wire:loading.attr="disabled" rel="prev">@lang('pagination.previous')</button>

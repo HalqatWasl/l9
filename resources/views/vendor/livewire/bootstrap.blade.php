@@ -1,9 +1,9 @@
 <div>
     @if ($paginator->hasPages())
         @php(isset($this->numberOfPaginatorsRendered[$paginator->getPageName()]) ? $this->numberOfPaginatorsRendered[$paginator->getPageName()]++ : $this->numberOfPaginatorsRendered[$paginator->getPageName()] = 1)
-
+        
         <nav>
-            <ul class="pagination justify-content-center my-3 ">
+            <ul class="pagination">
                 {{-- Previous Page Link --}}
                 @if ($paginator->onFirstPage())
                     <li class="page-item disabled" aria-disabled="true" aria-label="@lang('pagination.previous')">
@@ -18,7 +18,7 @@
                 {{-- Pagination Elements --}}
                 @foreach ($elements as $element)
                     {{-- "Three Dots" Separator --}}
-                    @if (is_string($element) )
+                    @if (is_string($element))
                         <li class="page-item disabled" aria-disabled="true"><span class="page-link">{{ $element }}</span></li>
                     @endif
 
@@ -30,7 +30,6 @@
                             @else
                                 <li class="page-item" wire:key="paginator-{{ $paginator->getPageName() }}-{{ $this->numberOfPaginatorsRendered[$paginator->getPageName()] }}-page-{{ $page }}"><button type="button" class="page-link" wire:click="gotoPage({{ $page }}, '{{ $paginator->getPageName() }}')">{{ $page }}</button></li>
                             @endif
-
                         @endforeach
                     @endif
                 @endforeach
