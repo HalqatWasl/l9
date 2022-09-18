@@ -12,7 +12,7 @@ class Province extends Component
     protected $paginationTheme = 'bootstrap';
 
 
-    public $search;
+    public $search =" ";
     public $active;
 
 
@@ -70,8 +70,9 @@ class Province extends Component
 
         $search ='%'.$this->search.'%';
 
-        return view('livewire.dashboard.province',
-                  ['provinces' => ModelsProvince::where('name','LIKE',$search)->paginate(10) ]);
+        // return view('livewire.dashboard.province',
+        //           ['provinces' => ModelsProvince::where('name','LIKE',$search)->paginate(10) ]);
+                  return view('livewire.dashboard.province');
     }
 
 }

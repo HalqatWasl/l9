@@ -13,7 +13,7 @@ class Departement extends Component
     protected $paginationTheme = 'bootstrap';
 
 
-    public $search;
+    public $search = " ";
     public $active;
 
 
