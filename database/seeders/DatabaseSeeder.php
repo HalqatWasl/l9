@@ -27,8 +27,11 @@ class DatabaseSeeder extends Seeder
         //     'is_admin' => '1',
         // ]);
 
+        \App\Models\Departement::factory()->create([
+            'name' => 'نجار',
+            'is_active' => '1',
+        ]);
 
-           \App\Models\Province::factory(5)->create();
-           \App\Models\Departement::factory(5)->create();
+
     }
 }

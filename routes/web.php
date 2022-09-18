@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Input;
 use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Notifications;
 use Illuminate\Notifications\Notification;
 
@@ -160,3 +161,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->midd
 //     Route::patch('/{post}/update', 'PostsController@update')->name('posts.update');
 //     Route::delete('/{post}/delete', 'PostsController@destroy')->name('posts.destroy');
 // });
+
+Route::get('add', function () {
+    return view('add');
+});
+
+Route::post('/addp',  [App\Http\Controllers\HomeController::class, 'storep'] )->name('addp');
+Route::post('/addd',  [App\Http\Controllers\HomeController::class, 'stored'] )->name('addd');

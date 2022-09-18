@@ -49,8 +49,20 @@ class HomeController extends Controller
         return view('home',compact('departements','evaluation','users'));
     }
 
+    public function storep(Request $data){
 
+        return Province::create([
+            'name' => $data['name'],
+            'is_active'=>'1',
+        ]);
+    }
 
+    public function stored(Request $data){
 
+        return Departement::create([
+            'name' => $data['name'],
+            'is_active'=>'1',
+        ]);
+    }
 
 }
