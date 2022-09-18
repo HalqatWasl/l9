@@ -73,6 +73,6 @@ class Departement extends Component
         $this->emit('msg');
         $search ='%'.$this->search.'%';
 
-        return view('livewire.dashboard.departement' , ['departements' => ModelsDepartement::where('name','LIKE',$search)->paginate(10) ]);
+        return view('livewire.dashboard.departement' , ['departements' => ModelsDepartement::all() ]);
     }
 }

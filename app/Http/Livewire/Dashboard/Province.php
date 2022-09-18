@@ -72,7 +72,7 @@ class Province extends Component
 
         // return view('livewire.dashboard.province',
         //           ['provinces' => ModelsProvince::where('name','LIKE',$search)->paginate(10) ]);
-                  return view('livewire.dashboard.province');
+                  return view('livewire.dashboard.province' , ['provinces' => ModelsProvince::all() ]);
     }
 
 }
