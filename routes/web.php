@@ -92,6 +92,22 @@ Route::get('dashboard/users', function () {
 })->name('dashboard.users');
 
 
+Route::get('dashboard/province', function () {
+    return view('dashboard.province');
+})->name('dashboard.province');
+
+
+Route::get('dashboard/directorate', function () {
+    return view('dashboard.directorates');
+})->name('dashboard.directorates');
+
+Route::get('dashboard/departement', function () {
+    return view('dashboard.departement');
+})->name('dashboard.departement');
+
+Route::get('dashboard/openWorks', function () {
+    return view('dashboard.openWorks');
+})->name('dashboard.openWorks');
 
 
 Route::group(['middleware' => ['admin']], function() {
@@ -105,22 +121,22 @@ Route::group(['middleware' => ['admin']], function() {
     //     return view('dashboard.users');
     // })->name('dashboard.users');
 
-    Route::get('dashboard/province', function () {
-        return view('dashboard.province');
-    })->name('dashboard.province');
+    // Route::get('dashboard/province', function () {
+    //     return view('dashboard.province');
+    // })->name('dashboard.province');
 
 
-    Route::get('dashboard/directorate', function () {
-        return view('dashboard.directorates');
-    })->name('dashboard.directorates');
+    // Route::get('dashboard/directorate', function () {
+    //     return view('dashboard.directorates');
+    // })->name('dashboard.directorates');
 
-    Route::get('dashboard/departement', function () {
-        return view('dashboard.departement');
-    })->name('dashboard.departement');
+    // Route::get('dashboard/departement', function () {
+    //     return view('dashboard.departement');
+    // })->name('dashboard.departement');
 
-    Route::get('dashboard/openWorks', function () {
-        return view('dashboard.openWorks');
-    })->name('dashboard.openWorks');
+    // Route::get('dashboard/openWorks', function () {
+    //     return view('dashboard.openWorks');
+    // })->name('dashboard.openWorks');
 
 
 
