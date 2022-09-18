@@ -67,7 +67,7 @@ class Province extends Component
 
     public function render()
     {
-        
+
         $search ='%'.$this->search.'%';
 
         return view('livewire.dashboard.province',
