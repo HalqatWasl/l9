@@ -13,7 +13,7 @@ class Departement extends Component
     protected $paginationTheme = 'bootstrap';
 
 
-    public $search = " ";
+    public $search;
     public $active;
 
 
@@ -73,6 +73,6 @@ class Departement extends Component
         $this->emit('msg');
         $search ='%'.$this->search.'%';
 
-        return view('livewire.dashboard.departement' , ['departements' => ModelsDepartement::all() ]);
+        return view('livewire.dashboard.departement' , ['departements' => ModelsDepartement::where('name','LIKE',$search)->paginate(10) ]);
     }
 }
