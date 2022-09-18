@@ -83,6 +83,16 @@ Route::group(['middleware' => ['auth']], function() {
 
 });
 
+Route::get('dashboard', function () {
+    return view('dashboard.index');
+})->name('dashboard');
+
+Route::get('dashboard/users', function () {
+    return view('dashboard.users');
+})->name('dashboard.users');
+
+
+
 
 Route::group(['middleware' => ['admin']], function() {
 
