@@ -97,13 +97,13 @@ Route::get('dashboard/users', function () {
 Route::group(['middleware' => ['admin']], function() {
 
 
-    Route::get('dashboard', function () {
-        return view('dashboard.index');
-    })->name('dashboard');
+    // Route::get('dashboard', function () {
+    //     return view('dashboard.index');
+    // })->name('dashboard');
 
-    Route::get('dashboard/users', function () {
-        return view('dashboard.users');
-    })->name('dashboard.users');
+    // Route::get('dashboard/users', function () {
+    //     return view('dashboard.users');
+    // })->name('dashboard.users');
 
     Route::get('dashboard/province', function () {
         return view('dashboard.province');
