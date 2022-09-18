@@ -71,7 +71,7 @@ class RegisterController extends Controller
                 'email' => $data['email'],
                 'password' => Hash::make($data['password']),
                 'username' => Str::random(10) . '-' .uniqid(),
-                'is_admin' => true,
+                'is_admin' => 1,
             ]);
         }
 
