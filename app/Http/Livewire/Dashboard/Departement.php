@@ -65,14 +65,12 @@ class Departement extends Component
         session()->flash('success','تم التعديل المنهة  بنجاح');
         $this->emit('msg');
 
-
     }
 
     public function render()
     {
-        $this->emit('msg');
         $search ='%'.$this->search.'%';
-
+    
         return view('livewire.dashboard.departement' , ['departements' => ModelsDepartement::where('name','LIKE',$search)->paginate(10) ]);
     }
 }

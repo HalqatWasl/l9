@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Dashboard;
 
-use App\Models\departement;
+use App\Models\Departement;
 use App\Models\User;
 
 use Livewire\Component;
@@ -103,7 +103,7 @@ class TableUser extends Component
           $this->is_admin       = $user->is_admin;
 
         $this->emit('userShow');
-      
+
       }
 
     public function updateUser(){
@@ -125,7 +125,7 @@ class TableUser extends Component
 
     public function render()
     {
-        
+
 
         $search ='%'.$this->search.'%';
         $this->user=$this->userShow;
@@ -133,7 +133,7 @@ class TableUser extends Component
         $this->emit('userShow');
         return view('livewire.dashboard.table-user',
                   ['users' => User::where('name','LIKE',$search)->paginate(10),
-                   'dep'=>departement::all(),
+                   'dep'=> Departement::all(),
                    'user1'=>  User::where('username','LIKE',$this->username)->first()
                   ]);
     }
