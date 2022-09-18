@@ -29,17 +29,17 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\Departement::factory()->create([
             'name' => 'نجار',
-            'is_active' => 1,
+            'is_active' => '1',
         ]);
 
         \App\Models\Province::factory()->create([
             'name' => 'صنعاء',
-            'is_active' => 1,
+            'is_active' => '1',
         ]);
 
         \App\Models\Departement::factory()->create([
-            'name' => 'نجار',
-            'is_active' => 1,
+            'name' => 'سباك',
+            'is_active' => '1',
         ]);
     }
 }
