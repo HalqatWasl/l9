@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\departement;
+use App\Models\Departement;
 use App\Models\Directorate;
 use App\Models\Province;
 use App\Models\User;
@@ -54,7 +54,7 @@ class Worker extends Component
 
             $this->provinces     =  Province::all();
             $this->directorates  =  Directorate::all()->where('province_id',$this->select1);
-            $this->departements  =  departement::all();
+            $this->departements  =  Departement::all();
 
             // return view('livewire.worker',['users'=> User::paginate(10)]);
             return view('livewire.worker',['users'=> User::where('departement_id','LIKE',"%{$this->departement_id}%")

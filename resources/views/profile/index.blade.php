@@ -17,7 +17,7 @@
             <div class="card text-center  pt-5  " style="width: 100%;">
                 @if(Auth::user()->image)
 
-                  <img src="{{ '/storage/images/'.Auth::user()->image }}" class="card-img-top rounded-circle m-auto " alt="..." style="width: 10rem; height: 10rem;">
+                  <img src="{{ 'storage/images/'.Auth::user()->image }}" class="card-img-top rounded-circle m-auto " alt="..." style="width: 10rem; height: 10rem;">
 
                 @endif
              <div class="card-body">
