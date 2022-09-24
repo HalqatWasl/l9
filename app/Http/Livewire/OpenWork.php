@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\departement;
+use App\Models\Departement;
 use App\Models\Directorate;
 use App\Models\Open_work;
 use App\Models\Province;
@@ -38,7 +38,7 @@ class OpenWork extends Component
     public function render()
     {
 
-         $this->departements=departement::all();
+         $this->departements=Departement::all();
          $this->provinces=Province::all();
         // return view('livewire.open-work', ['Open_work'=> $this->readToLoad ? Open_work::paginate(1) : [],]);
 
