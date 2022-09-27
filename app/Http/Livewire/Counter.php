@@ -29,8 +29,8 @@ class Counter extends Component
     public function render()
     {
         $this->provinces = Province::all();
-        $this->msg=$this->select1;
-      $this->directorates =Directorate::all()->where('province_id',$this->select1);
+        // $this->msg=$this->select1;
+    //   $this->directorates =Directorate::all()->where('province_id',$this->select1);
         return view('livewire.counter');
     }
 }

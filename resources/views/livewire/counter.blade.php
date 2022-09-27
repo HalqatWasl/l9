@@ -3,7 +3,7 @@
     <div class="col-md-6 ">
         <div class=" mb-6">
             <label>المحافظة</label>
-            <select   wire:model="select1" wire:change='sel' class=" form-select  " aria-label=".form-select-lg مثال" style="height: 50px">
+            <select name="province_id"  wire:model="select1" wire:change='sel' class=" form-select  " aria-label=".form-select-lg مثال" style="height: 50px">
 
               @foreach($provinces as $province)
                 <option value="{{ $province->id }}"> {{ $province->name }}</option>
@@ -17,7 +17,7 @@
     <div class="col-md-6 ">
         <div class=" mb-6">
             <label>المديرية</label>
-            <select   name="directorate_id" wire:model='userAdd.directorate_id'  class=" form-select    " aria-label=".form-select-lg مثال" style="height: 50px">
+            <select   name="directorate_id"   class=" form-select    " aria-label=".form-select-lg مثال" style="height: 50px">
                 @if($directorates)
                 @foreach($directorates as $directorate)
                 <option  value="{{ $directorate->id }}"> {{ $directorate->name }}</option>

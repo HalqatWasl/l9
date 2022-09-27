@@ -38,10 +38,9 @@
                                 </select>
                             </div>
                         </div>
-                        @livewireStyles
-                        <livewire:counter>
-                        @livewireScripts
 
+                        <livewire:counter>
+                   
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>الموقع</label>
