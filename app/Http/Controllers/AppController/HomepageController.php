@@ -20,7 +20,7 @@ class HomepageController extends Controller
  $departements=Departement::all();
  $province = Province::all();
        // $users =  Evaluation::select('user_id',DB::raw("SUM(evaluation) as total, COUNT(evaluation) as count"))->groupBy('user_id')->orderBy('total','DESC')->get()->take(20) ;
-     
+
      /*  $users=DB::table('evaluations')
         ->join('users','evaluations.user_id', '=','users.id')
         ->join('directorates','users.citys_id', '=','directorates.id  ')
@@ -35,14 +35,14 @@ class HomepageController extends Controller
         ->select('evaluations.user_id','users.name','users.phone','users.image',
         'departements.name as depName','directorates.name as dirName','provinces.name as proName',
         DB::raw("SUM(evaluations.evaluation) as total, COUNT(evaluations.evaluation) as count",))
-        ->groupBy('evaluations.user_id')->orderBy('total','DESC')->get()->take(20);
-   
+        ->groupBy('evaluations.user_id')->orderBy('total','DESC')->get();
 
-        
+
+
         return response(['departemnts'=>$departements,'province'=>$province,
        'users'=>$users],200);
-        
-        
+
+
     }
 
    //to get the directory
@@ -72,11 +72,11 @@ class HomepageController extends Controller
      DB::raw("SUM(evaluations.evaluation) as total, COUNT(evaluations.evaluation) as count",))
      ->groupBy('evaluations.user_id')->orderBy('total','DESC')->get();
 
-    
+
     //$users= User::all()->where('departement_id','LIKE',$request->departement_id)->where('citys_id','LIKE',$request->directorate_id) ->take(23);
-  
+
     return response(['users'=>$users,'departement_id'=>$departement_id,'province_id'=>$province_id,'directorate_id'=>$directorate_id],200);
-   
+
    }
 
 }
