@@ -138,6 +138,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->midd
 //     Route::delete('/{post}/delete', 'PostsController@destroy')->name('posts.destroy');
 // });
 
+Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login.perform');
+
 Route::get('add', function () {
     return view('add');
 });

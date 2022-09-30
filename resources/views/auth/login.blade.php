@@ -11,13 +11,13 @@
       <h4 class="p-2">تسجيل الدخول</h4>
 
       <div class="shadow-sm p-2 border  rounded-2 bg-white">
-      <form method="POST" action="{{ route('login') }}">
+      <form method="POST" action="{{ route('login.perform') }}">
 
          @csrf
 
           <div class="form-floating mb-2">
             <input   id="email" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus id="floatingInput" placeholder="">
-            <label for="floatingInput">البريد الالكتروني</label>
+            <label for="floatingInput">ادخل رقم هاتفك</label>
 
             @error('email')
                <span class="invalid-feedback" role="alert">
