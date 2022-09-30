@@ -10,6 +10,23 @@
       <h1 class="pb-5">حلقة وصل</h1>
       <h4 class="p-2">تسجيل الدخول</h4>
 
+      @if(Session::get('error', false))
+    @php $data = session()->get('success'); @endphp
+    @if (is_array($data))
+        @foreach ($data as $msg)
+            <div class="alert alert-success" role="alert">
+                <i class="fa fa-check"></i>
+                {{ $msg }}
+            </div>
+        @endforeach
+    @else
+        <div class="alert alert-success" role="alert">
+            <i class="fa fa-check"></i>
+            {{ $data }}
+        </div>
+    @endif
+@endif
+
       <div class="shadow-sm p-2 border  rounded-2 bg-white">
       <form method="POST" action="{{ route('login.perform') }}">
 
@@ -19,7 +36,7 @@
             <input   id="email" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus id="floatingInput" placeholder="">
             <label for="floatingInput">ادخل رقم هاتفك</label>
 
-            @error('email')
+            @error('phone')
                <span class="invalid-feedback" role="alert">
                    <strong>{{ $message }}</strong>
               </span>
@@ -27,7 +44,7 @@
           </div>
 
           <div class="form-floating mb-2">
-            <input type="password" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" id="floatingPassword" placeholder="كلمة السر">
+            <input type="password" id="password"  class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" id="floatingPassword" placeholder="كلمة السر">
             <label for="floatingPassword">كلمة السر</label>
 
             @error('password')
