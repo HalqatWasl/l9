@@ -1,7 +1,7 @@
 <div class="row">
    <div class="text-end">
-    <button type="button"  class="btn btn-primary btn-lg mx-2 d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal" wire:click='modalShowM'>
-        فـلاتـر
+    <button type="button"  class="btn btn-primary btn-lg mx-2 d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+        فـلتـر
      </button>
    </div>
    <div class="col-4  d-none d-lg-block ">
@@ -27,7 +27,7 @@
         <div class=" mb-6">
             <label>المديرية</label>
             <select    class=" form-select" select  wire:model="directorateID"    aria-label=".form-select-lg مثال" style="height: 50px">
-            
+
             @if($directorates)
                 @foreach($directorates as $directorate)
                 <option   value="{{ $directorate->id }}" {{ ($directorate_id == $directorate->id  ?  'selected': '') }}> {{ $directorate->name }}</option>
@@ -141,7 +141,7 @@
                             @endif
                     </span>
 
-                    <span  class="text-muted m-auto  p-0 ms-1" style="font-size: 0.9rem;"><i class="bi bi-clock  " style="font-size: 0.9rem;"></i>  منذ أسبوعين  </span>
+                    <!-- <span  class="text-muted m-auto  p-0 ms-1" style="font-size: 0.9rem;"><i class="bi bi-clock  " style="font-size: 0.9rem;"></i>  منذ أسبوعين  </span> -->
 
                 </div>
 
@@ -204,7 +204,7 @@
 
 
                     <div class="col-12  mt-5">
-                        <h4 class="pb-2">فــلاتـر</h4>
+                        <h4 class="pb-2">فــلتـر</h4>
                    <div class=" mb-6">
                        <label>المحافظة</label>
                        <select name="province_id"   wire:change='sel'  wire:model="select1" class=" form-select  " aria-label=".form-select-lg مثال" style="height: 50px">

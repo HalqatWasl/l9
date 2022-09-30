@@ -31,6 +31,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if(auth()->check() && auth()->user()->email_verified_at == null){
+
+            return redirect('/verification');
+
+        }
 
 
         if( auth()->check() && auth()->user()->is_admin == 1){

@@ -31,14 +31,13 @@ class profileontroller extends Controller
 
         return response([
             'message' => "updated info "
-            
+
         ], 200);
 
 
     }
 
     function updateimage(Request $request) {
-
 
         if($request->hasFile('image')){
             $filename=$request->image->getClientOriginalName();
@@ -48,10 +47,10 @@ class profileontroller extends Controller
         }
         return response([
             'message' => "updated pic "
-            
+
         ], 200);
-        
-       
+
+
 /*
         $user =new User();
         $user->user_id = auth()->id();

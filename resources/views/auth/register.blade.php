@@ -13,7 +13,7 @@
          @csrf
 
          <div class="form-floating mb-2">
-            <input type="text"  id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus id="floatingInput" placeholder="name@example.com">
+            <input type="text"  id="name"  class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">الاسم</label>
 
             @error('name')
@@ -24,10 +24,10 @@
          </div>
 
          <div class="form-floating mb-2">
-            <input type="email"  id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">البريد الالكتروني</label>
+            <input type="text"  id="phone"  class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus id="floatingInput" placeholder="77734567">
+            <label for="floatingInput">رقم هاتفك</label>
 
-            @error('email')
+            @error('phone')
                <span class="invalid-feedback" role="alert">
                    <strong>{{ $message }}</strong>
               </span>

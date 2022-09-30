@@ -74,7 +74,7 @@ class AuthController extends Controller
         ], 200);
     }
 
-   ////////////////////////////////////////////////////////////////// 
+   //////////////////////////////////////////////////////////////////
     // get user details
     public function user()
     {
@@ -86,13 +86,13 @@ class AuthController extends Controller
     ////////////////////////////////////////
     public function users()
     {
-        
+
          return response([
           'users'=>  user::all()
          ], 200);
     }
 
 
-   
+
 
 }

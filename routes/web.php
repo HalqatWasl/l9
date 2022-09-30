@@ -29,10 +29,10 @@ Route::post('worker', [App\Http\Controllers\WorkerController::class, 'search'])-
 
 
 
-//  Auth::routes(['verify' => true]);
+ Auth::routes(['verif' => true]);
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
-
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->middleware('verif');
 
 
 Route::get('/w', function () {
@@ -62,7 +62,7 @@ Route::post('/offer/was', [App\Http\Controllers\OffersController::class, 'was'])
 // Route::get('/user/{id}', 'UserController@show')->name('user.show');
 Route::get('profile/settings',[App\Http\Controllers\ProfileController::class,'eidt'])->name('profile.settings');
 
-Route::group(['middleware' => ['auth']], function() {
+Route::group(['middleware' => ['auth','verif']], function() {
 
     Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
     Route::get('/profile-edit', [App\Http\Controllers\ProfileController::class, 'eidt'])->name('profile-edit');
@@ -84,7 +84,9 @@ Route::group(['middleware' => ['auth']], function() {
 
 });
 
-
+Route::get('/createCode', [App\Http\Controllers\AuthOtpController::class, 'createCode'])->name('createCode')->middleware('auth');
+Route::get('/verification', [App\Http\Controllers\AuthOtpController::class, 'index'])->name('verification')->middleware('auth');
+Route::post('/verification', [App\Http\Controllers\AuthOtpController::class, 'loginWithOtp'])->name('verification.loginWithOtp')->middleware('auth');
 
 Route::group(['middleware' => ['admin']], function() {
 
@@ -118,12 +120,11 @@ Route::group(['middleware' => ['admin']], function() {
 
 });
 
+ Auth::routes();
 
-Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware(['auth','verified'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware(['auth','verif'])->name('home');
 
 
 
