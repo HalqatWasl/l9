@@ -51,7 +51,7 @@ class ProfileController extends Controller
     public function upload(Request $request){
 
         if($request->hasFile('image')){
-            $filename=rand(10000,1000000).$request->image->getClientOriginalName();
+            $filename=$request->image->getClientOriginalName();
             $request->image->storeAs('images',$filename,'public');
              Auth()->user()->update(['image'=>$filename]);
         }
