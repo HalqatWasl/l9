@@ -8,11 +8,15 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<<<<<<< HEAD
     <meta name="description" content="">
     <meta name="key" content="Halqat Wasl1, منصة حلقة وصل, مهني">
 
     <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
     <title>منصة حلقة وصل | Halqat Wasl1</title>
+=======
+    <title>{{ config('app.name', 'Laravel') }}</title>
+>>>>>>> parent of 1d4fe87 (sitemap)
 
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->

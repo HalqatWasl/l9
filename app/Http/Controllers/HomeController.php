@@ -90,4 +90,5 @@ class HomeController extends Controller
         ->header('Content-Type','text/xml');
     }
 
+
 }

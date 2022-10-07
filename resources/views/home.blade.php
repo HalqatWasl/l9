@@ -401,7 +401,7 @@
                                 <h5 class="mt-0">ابحث عن عامل</h5>
                                 <p>لمعرفة كافة العمال المتوفرين حاليا يرجى الذهاب لصفحة العمال عبر المزيد</p>
 
-                                <a href="{{ route('worker')  }}}">
+                                <a href="{{ route('worker')  }}">
                                 المزيد
                                     <i class="bx bx-chevrons-left"></i>
                                 </a>
