@@ -70,4 +70,13 @@ class HomeController extends Controller
         ]);
     }
 
+    public function sitemap()
+    {
+
+
+        // pass value to sitemap.blade.php
+        return response()->view("sitemap")
+        ->header('Content-Type','text/xml');
+    }
+
 }

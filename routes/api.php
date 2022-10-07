@@ -22,6 +22,7 @@ use App\Http\Controllers\AppController\WorkerController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('/w', [WorkController::class, 'index']);
 
 Route::get('/showDepartement', [DepartementController::class, 'showDepartement']);
 Route::get('/showDirectorate', [DirectoratesController::class, 'showDirectorate']);

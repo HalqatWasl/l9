@@ -35,8 +35,7 @@ class HomepageController extends Controller
         ->select('evaluations.user_id','users.name','users.phone','users.image',
         'departements.name as depName','directorates.name as dirName','provinces.name as proName',
         DB::raw("SUM(evaluations.evaluation) as total, COUNT(evaluations.evaluation) as count",))
-        ->groupBy('evaluations.user_id')->orderBy('total','DESC')->take(20);
-
+        ->groupBy('evaluations.user_id')->orderBy('total','DESC')->take(10)->get();
 
 
         return response(['departemnts'=>$departements,'province'=>$province,
