@@ -8,9 +8,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <meta name="description" content="">
+    <meta name="key" content="Halqat Wasl1, منصة حلقة وصل, مهني">
+
     <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
-    <title>منصة حلقة وصل </title>
-     b5-
+    <title>منصة حلقة وصل | Halqat Wasl1</title>
+
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
 

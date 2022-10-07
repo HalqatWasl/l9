@@ -70,6 +70,17 @@ class HomeController extends Controller
         ]);
     }
 
+    public function img(Request $request){
+
+        if($request->hasFile('img')){
+            $filename=rand(10000,1000000).$request->image->getClientOriginalName();
+            $request->image->storeAs('images',$filename,'public');
+            //  Auth()->user()->update(['image'=>$filename]);
+        }
+
+        return redirect()->back()->with('success','تم تغيير الصورة الشخصية بنجاح ');
+    }
+
     public function sitemap()
     {
 

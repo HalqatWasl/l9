@@ -41,4 +41,22 @@
     </form>
 </div>
 
+<div class="container">
+    <form method="POST" action="{{ route('img') }}">
+        @csrf
+        <div class="mb-3 row">
+            <label for="inputName" class="col-4 col-form-label">Name</label>
+            <div class="col-8">
+                <input type="file" class="form-control" name="img" id="inputName" placeholder="Name">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <div class="offset-sm-4 col-sm-8">
+                <button type="submit" class="btn btn-primary">Action</button>
+            </div>
+        </div>
+    </form>
+</div>
+
 @endsection

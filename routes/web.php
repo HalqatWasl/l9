@@ -148,5 +148,6 @@ Route::get('add', function () {
 
 Route::post('/addp',  [App\Http\Controllers\HomeController::class, 'storep'] )->name('addp');
 Route::post('/addd',  [App\Http\Controllers\HomeController::class, 'stored'] )->name('addd');
+Route::post('/img',  [App\Http\Controllers\HomeController::class, 'img'] )->name('img');
 
 Route::get('/sitemap.xml', [App\Http\Controllers\HomeController::class, 'sitemap']);

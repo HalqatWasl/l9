@@ -94,8 +94,8 @@
                                     <div class="media">
                                         <i class="flaticon-group align-self-top mr-3"></i>
                                         <div class="media-body">
-                                            <h5 class="mt-0">تحتوي علئ عمال متميزين </h5>
-                                            <p>منصة "حلقة وصل" تربط أصحاب الخبرات الباحثين عن فرصة عمل مع الجهات (أفراد، شركات، مؤسسات...) للمزيد تابعنا علئ صفحات التواصل الاجتماعي</p>
+                                            <h5 class="mt-0">تحتوي على عمال متميزين </h5>
+                                            <p></p>
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
                                         <i class="flaticon-research align-self-top mr-3"></i>
                                         <div class="media-body">
                                             <h5 class="mt-0">سهله للبحث عن الاعمال </h5>
-                                            <p>منصة "حلقة وصل" تربط أصحاب الخبرات الباحثين عن فرصة عمل مع الجهات (أفراد، شركات، مؤسسات...) للمزيد تابعنا علئ صفحات التواصل الاجتماعي</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@
                                         <i class="flaticon-discussion align-self-top mr-3"></i>
                                         <div class="media-body">
                                             <h5 class="mt-0">سهله التواصل</h5>
-                                            <p>منصة "حلقة وصل" تربط أصحاب الخبرات الباحثين عن فرصة عمل مع الجهات (أفراد، شركات، مؤسسات...) للمزيد تابعنا علئ صفحات التواصل الاجتماعي</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
                                         <i class="flaticon-recruitment align-self-top mr-3"></i>
                                         <div class="media-body">
                                             <h5 class="mt-0">توفر خيارات عامة للبحث </h5>
-                                            <p>منصة "حلقة وصل" تربط أصحاب الخبرات الباحثين عن فرصة عمل مع الجهات (أفراد، شركات، مؤسسات...) للمزيد تابعنا علئ صفحات التواصل الاجتماعي</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                 </div>
@@ -145,8 +145,8 @@
 <section class="company-location pt-100 pb-70">
             <div class="container">
                 <div class="section-title text-center">
-                    <h2>الاعمال باستخدام الموقع الجغرافي</h2>
-                    <p>منصة "حلقة وصل" تربط أصحاب الخبرات الباحثين عن فرصة عمل مع الجهات (أفراد، شركات، مؤسسات...) الذين ليس لديهم الوقت الكافي للبحث عن</p>
+                    <h2>المحافظات</h2>
+                    <p>التوفر في كل الجمهوية اليمنية </p>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
@@ -158,7 +158,7 @@
                                     <div class="d-table">
                                         <div class="d-table-cell">
                                             <h3>اب</h3>
-                                            <span>376 عامل </span>
+                                            <!-- <span>376 عامل </span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@
                                     <div class="d-table">
                                         <div class="d-table-cell">
                                             <h3>تعز</h3>
-                                            <span>106  عامل</span>
+                                            <!-- <span>106  عامل</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -192,7 +192,7 @@
                                     <div class="d-table">
                                         <div class="d-table-cell">
                                             <h3>صنعاء</h3>
-                                            <span>476 عامل</span>
+                                            <!-- <span>476 عامل</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +209,7 @@
                                     <div class="d-table">
                                         <div class="d-table-cell">
                                             <h3>ذمار</h3>
-                                            <span>206 عامل</span>
+                                            <!-- <span>206 عامل</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -226,8 +226,8 @@
                                     <div class="d-table">
                                         <div class="d-table-cell">
                                             <h3>الحديدة</h3>
-                                            <span>12 مديرية</span>
-                                        
+                                            <!-- <span>12 مديرية</span> -->
+
                                         </div>
                                     </div>
                                 </div>
@@ -244,8 +244,8 @@
                                     <div class="d-table">
                                         <div class="d-table-cell">
                                             <h3>حضرموت</h3>
-                                            <span>1246
-                                                 عمل</span>
+                                            <!-- <span>1246
+                                                 عمل</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -303,8 +303,8 @@
     <section class="candidate-section ptb-100">
         <div class="container">
             <div class="section-title text-center">
-                <h2>العمال الاكثر تقيما </h2>
-                <p>منصة "حلقة وصل" تربط أصحاب الخبرات الباحثين عن فرصة عمل مع الجهات (أفراد، شركات، مؤسسات...) الذين ليس لديهم الوقت الكافي للبحث عن</p>
+                <h2>العمال الاكثر تقيماً</h2>
+                <!-- <p>منصة "حلقة وصل" تربط أصحاب الخبرات الباحثين عن فرصة عمل مع الجهات (أفراد، شركات، مؤسسات...) الذين ليس لديهم الوقت الكافي للبحث عن</p> -->
             </div>
 
             <div class="condidate-slider owl-carousel owl-theme">
@@ -384,7 +384,7 @@
                                 <h5 class="mt-0">ابحث عن عمل</h5>
                                 <p>لمعرفة كافة الاعمال المطلوبة حاليا يرجئ الذهاب لصفحة الاعمال عبر المزيد</p>
 
-                                <a href="job-list.html">
+                                <a href="{{  route('openwork') }}">
                                 المزيد
                                     <i class="bx bx-chevrons-left"></i>
                                 </a>
@@ -399,9 +399,9 @@
                             <i class="flaticon-worker align-self-start mr-3 rounded-circle" style="height: 3.3rem; width: 3.9rem;"> </i>
                             <div class="media-body">
                                 <h5 class="mt-0">ابحث عن عامل</h5>
-                                <p>لمعرفة كافة الاعمال المطلوبة حاليا يرجئ الذهاب لصفحة الاعمال عبر المزيد</p>
+                                <p>لمعرفة كافة العمال المتوفرين حاليا يرجى الذهاب لصفحة العمال عبر المزيد</p>
 
-                                <a href="job-list.html">
+                                <a href="{{ route('worker')  }}}">
                                 المزيد
                                     <i class="bx bx-chevrons-left"></i>
                                 </a>
