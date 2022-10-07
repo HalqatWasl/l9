@@ -384,7 +384,7 @@
                                 <h5 class="mt-0">ابحث عن عمل</h5>
                                 <p>لمعرفة كافة الاعمال المطلوبة حاليا يرجئ الذهاب لصفحة الاعمال عبر المزيد</p>
 
-                                <a href="{{  route('openwork') }}">
+                                <a href="{{  route('open_works') }}">
                                 المزيد
                                     <i class="bx bx-chevrons-left"></i>
                                 </a>
