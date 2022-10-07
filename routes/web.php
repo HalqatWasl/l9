@@ -146,9 +146,9 @@ Route::get('add', function () {
 
 Route::post('/addp',  [App\Http\Controllers\HomeController::class, 'storep'] )->name('addp');
 Route::post('/addd',  [App\Http\Controllers\HomeController::class, 'stored'] )->name('addd');
-<<<<<<< HEAD
+
 Route::post('/img',  [App\Http\Controllers\HomeController::class, 'img'] )->name('img');
 
 Route::get('/sitemap.xml', [App\Http\Controllers\HomeController::class, 'sitemap']);
-=======
->>>>>>> parent of 1d4fe87 (sitemap)
+
+
