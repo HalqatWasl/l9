@@ -65,7 +65,7 @@
                   <div>
                     @if( Auth::user()->user_type ==1 or Auth::user()->user_type ==3 )
 
-                    <a href="{{ route('work.create') }}" class="btn btn-primary  "> <span>اضافة  اعمالي  </span>  </a>
+                    <a href="{{ route('work.create') }}" class="btn btn-primary "> <span>اضافة  عمل سابق </span>  </a>
                   @endif
 
                   @if( Auth::user()->user_type ==2 or Auth::user()->user_type ==3 )
@@ -73,7 +73,7 @@
 
                   @endif
 
-                  <!-- <a href="{{ route('profile.settings') }}" class="btn btn-primary  d-lg-none">   <i class="bi bi-gear  ps-1 m-0" ></i></a> -->
+                  <a href="{{ route('profile.settings') }}" class="btn btn-primary  d-lg-none">   <i class="bi bi-gear  ps-1 m-0" ></i></a>
 
                   </div>
 
