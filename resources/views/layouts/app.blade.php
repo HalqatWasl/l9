@@ -17,6 +17,7 @@
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
     <meta name="google-site-verification" content="dj6GPS93qZHqQg14Hwzh3cJKBErSgJp9GS4xLIyBfOo" />
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
